@@ -2,9 +2,9 @@
   "name": "chuckbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node bot"
+    "start": "node bot.js"
   },
   "repository": {
     "type": "git",
