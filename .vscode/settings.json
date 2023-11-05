@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/7cf6c8a0-33a0-4f7f-b92d-60b1a946a5c1/resourceGroups/DemoCNbot/providers/Microsoft.Web/sites/ChuckBot",
+    "appService.deploySubpath": "."
+}

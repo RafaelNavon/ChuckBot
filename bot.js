@@ -55,13 +55,13 @@ bot.onText(/^(\d+)$/, async (msg, match) => {
 });
 
 async function scrapeJoke(jokeNumber) {
-  const browser = await puppeteerExtra.launch({ headless: false, devtools: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  const browser = await puppeteerExtra.launch({ headless: true, devtools: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
   const delay = duration => new Promise(res => setTimeout(res, duration));
 
 
   await page.setViewport({ width: 1366, height: 768 });
-  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36');
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36');
 
   const response = await page.goto('https://parade.com/968666/parade/chuck-norris-jokes/', { waitUntil: 'domcontentloaded' });
   await delay(60000); // wait for 60 seconds to manually solve CAPTCHA
