@@ -1,5 +1,8 @@
 # ChuckBot
 
+Link to the bot: chuckbot.azurewebsites.net
+
+
 Hi,
 This is the Chuck Norris Telegram bot.
 To contact with it, you just need to set a language, for example: "set language en" (to set the language to English).
