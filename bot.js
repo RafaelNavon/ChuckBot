@@ -55,7 +55,7 @@ bot.onText(/^(\d+)$/, async (msg, match) => {
 });
 
 async function scrapeJoke(jokeNumber) {
-  const browser = await puppeteerExtra.launch({ headless: false, devtools: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  const browser = await puppeteerExtra.launch({ headless: true, devtools: false, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
   const delay = duration => new Promise(res => setTimeout(res, duration));
 
