@@ -51,9 +51,8 @@ bot.onText(/^(\d+)$/, async (msg, match) => {
 });
 
 async function scrapeJoke(jokeNumber) {
-  // The parameters provided by ZenRows should be used here.
   const url = 'https://parade.com/968666/parade/chuck-norris-jokes/';
-  const apiKey = zenRowsApiKey; // Replace with your actual ZenRows API key from your .env file
+  const apiKey = zenRowsApiKey;
 
   try {
     const response = await axios({
@@ -61,8 +60,10 @@ async function scrapeJoke(jokeNumber) {
       method: 'GET',
       params: {
         'url': url,
-        'apikey': apiKey,
-        'js_render': 'true'
+		    'apikey': apiKey,
+		    'js_render': 'true',
+		    'antibot': 'true',
+		    'premium_proxy': 'true',
       }
     });
 
