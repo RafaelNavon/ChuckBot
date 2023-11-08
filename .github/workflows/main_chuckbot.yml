@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-function-app
         with:
           app-name: ChuckNorrisTeleBot
-          slot-name: Production # Only if you are using slots, otherwise remove this line
+          slot-name: Production
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
           package: . # The path to your web app project or package file
 
