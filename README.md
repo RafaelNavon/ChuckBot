@@ -1,5 +1,8 @@
 # ChuckBot
 
+Link to the bot: chuckbot.azurewebsites.net
+
+
 Hi,
 This is the Chuck Norris Telegram bot.
 To contact with it, you just need to set a language, for example: "set language en" (to set the language to English).
@@ -12,7 +15,8 @@ So to summrize:
 3. wait for the joke.
 
 Here are some expamples:
-![Screenshot 2023-11-05 185443](https://github.com/RafaelNavon/ChuckBot/assets/44645278/28f61a07-97f3-470a-9458-511c050647a1)
-![Screenshot 2023-11-06 141301](https://github.com/RafaelNavon/ChuckBot/assets/44645278/c02df7c5-c847-4127-9a7e-f0fd7831fe09)
-![Screenshot 2023-11-06 114449](https://github.com/RafaelNavon/ChuckBot/assets/44645278/687e4e8d-fb92-4c7d-9482-110357776c99)
-![Screenshot 2023-11-05 204818](https://github.com/RafaelNavon/ChuckBot/assets/44645278/7e950def-7eec-424f-8531-b5c335dc776f)
+
+![Screenshot 2023-11-06 141301](https://github.com/RafaelNavon/ChuckBot/assets/44645278/4770c7dc-458d-464a-932c-0a0c732632f6)
+![Screenshot 2023-11-06 114449](https://github.com/RafaelNavon/ChuckBot/assets/44645278/673d629d-aa85-4655-bd9a-28403527864b)
+![Screenshot 2023-11-05 204818](https://github.com/RafaelNavon/ChuckBot/assets/44645278/97e4a674-4e14-40df-a16f-e3f8ad0a1132)
+![Screenshot 2023-11-05 185443](https://github.com/RafaelNavon/ChuckBot/assets/44645278/ba367aa9-dbb0-4aab-8b22-faa066ce17db)
