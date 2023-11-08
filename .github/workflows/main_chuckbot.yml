@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - ChuckBot
+name: Build and deploy Node.js app to Azure Function App - ChuckNorrisTeleBot
 
 on:
   push:
@@ -46,11 +46,12 @@ jobs:
         with:
           name: node-app
 
-      - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v2
-        id: deploy-to-webapp
+      - name: 'Deploy to Azure Function App'
+        uses: azure/functions-action@v1
+        id: deploy-to-function-app
         with:
-          app-name: 'ChuckBot'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: .
+          app-name: ChuckNorrisTeleBot
+          slot-name: Production # Only if you are using slots, otherwise remove this line
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          package: . # The path to your web app project or package file
+
