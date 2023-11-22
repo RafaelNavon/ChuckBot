@@ -1,6 +1,6 @@
 # ChuckBot
 
-Link to the bot: chuckbot.azurewebsites.net
+
 
 
 Hi,
